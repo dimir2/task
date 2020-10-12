@@ -9,7 +9,7 @@
 #define STATUS_ERR_NODATA   (-3)   /* No data to return/process. */
 #define STATUS_ERR_CAPACITY (-4)   /* No capacity left. */
 
-typedef struct _PrQueue PrQueue;
+typedef struct PrQueue PrQueue;
 
 /*  Brief: Create priority queue with specified capacity.
     Input:

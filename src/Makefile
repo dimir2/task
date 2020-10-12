@@ -1,6 +1,6 @@
 name := priority_queue
 
-CFLAGS += -g
+CFLAGS += -std=c99
 CC := gcc
 
 SOURCES := $(name).c
@@ -9,7 +9,11 @@ OBJS := $(SOURCES:.c=.o)
 all: $(name)
 
 $(name):$(OBJS)
-	@$(CC) $(CFLAGS) -o $(name) $(OBJS) $(LFLAGS) $(LIBS)
+	$(CC) -Wall $(CFLAGS) -o $(name) $(OBJS) $(LFLAGS) $(LIBS)
 
 clean:
 	rm -f $(name) $(OBJS)
+
+debug: CFLAGS += -DDEBUG -g
+debug: $(name)
+

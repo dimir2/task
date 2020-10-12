@@ -1,6 +1,9 @@
 #ifndef DEBUG_OUT_H
 #define DEBUG_OUT_H
 
+
+#define DEBUG
+
 #define TRUE  (1)
 #define FALSE (0)
 
